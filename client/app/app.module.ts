@@ -7,9 +7,18 @@ import { HttpModule } from '@angular/http';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { ListagemComponent } from './listagem/listagem.component';
 import { routing } from './app.routes';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
-    imports : [BrowserModule, FotoModule, PainelModule, HttpModule, routing],
+    imports : [
+        BrowserModule,
+        FotoModule,
+        PainelModule,
+        HttpModule,
+        routing,
+        FormsModule,
+        ReactiveFormsModule
+        ],
     declarations : [AppComponent, CadastroComponent, ListagemComponent],
     bootstrap : [AppComponent]
 })
